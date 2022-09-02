@@ -1,18 +1,17 @@
 import Image from 'next/Image'
-import coach from '../public/Сoach explains the material to the woman.png'
+import coach from '../public/vision.svg'
 
 const Slider = () => {
     return (
-        <div className='flex flex-col flex-wrap items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img'>
-            <div className='p-5 text-slate-600'>
-                <h1 className='text-5xl font-bold font-serif'>Our vision</h1>
-                <p className='py-5 font-normal font-mono '>We aim to develop a community that is <br/>
+        <div className="flex relative justify-center items-center custom-img h-screen">
+            <div className='z-40'>
+                <h1 className='font-semibold mb-20 text-7xl'>Our vision</h1>
+                <p className='text-3xl leading-10 mb-40'>We aim to develop a community that is <br/>
                 passionate about knowledge growth in terms <br/> of helping students reach their highest <br/>
                 academic potential</p>
-                {/* <button className='px-8 py-2 border'>Book</button> */}
             </div>
-            <div className='relative left-60'>
-                <Image src={coach} width={300} height={300}/>
+            <div className="absolute top-48 right-12 z-10">
+                <Image src={coach} width={700} height={400} />
             </div>
         </div>
     )
